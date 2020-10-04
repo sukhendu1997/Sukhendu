@@ -1,0 +1,93 @@
+
+mysql> use teacher;
+Database changed
+mysql> show tables;
++----------------------+
+| Tables_in_teacher    |
++----------------------+
+| admin_info           |
+| assignments_info     |
+| doubt                |
+| notes                |
+| stu_info             |
+| submitted_assignment |
+| suggestion           |
++----------------------+
+7 rows in set (0.30 sec)
+
+mysql> desc admin_info;
++------------------+-------------+------+-----+---------+-------+
+| Field            | Type        | Null | Key | Default | Extra |
++------------------+-------------+------+-----+---------+-------+
+| TEACHER_ID       | varchar(20) | NO   | PRI | NULL    |       |
+| TEACHER_PASSWORD | varchar(50) | YES  |     | NULL    |       |
++------------------+-------------+------+-----+---------+-------+
+2 rows in set (0.50 sec)
+
+mysql> desc assignments_info;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| STU_ID            | int(5)       | NO   |     | NULL    |       |
+| STU_NAME          | char(50)     | YES  |     | NULL    |       |
+| COURSE_NAME       | char(20)     | YES  |     | NULL    |       |
+| COURSE_ASSIGNMENT | varchar(500) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+4 rows in set (0.14 sec)
+
+mysql> desc doubt;
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| stu_id         | int(5)       | YES  |     | NULL    |       |
+| COURSE_NAME    | varchar(100) | YES  |     | NULL    |       |
+| QUESTION_ASK   | varchar(100) | YES  |     | NULL    |       |
+| TEACHER_ANSWER | varchar(200) | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> desc notes;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| stu_id      | int(5)       | NO   | PRI | NULL    |       |
+| course_name | varchar(30)  | YES  |     | NULL    |       |
+| notes       | varchar(200) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.20 sec)
+
+mysql> desc stu_info;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| stu_id       | int(5)      | NO   | PRI | NULL    |       |
+| stu_password | varchar(50) | YES  |     | NULL    |       |
+| stu_name     | varchar(20) | YES  |     | NULL    |       |
+| stu_phone    | int(10)     | YES  |     | NULL    |       |
+| stu_email    | varchar(40) | YES  |     | NULL    |       |
+| course_name  | char(20)    | YES  |     | NULL    |       |
+| start_at     | date        | YES  |     | NULL    |       |
+| end_at       | date        | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+8 rows in set (0.09 sec)
+
+mysql> desc submitted_assignment;
++----------------------+--------------+------+-----+---------+-------+
+| Field                | Type         | Null | Key | Default | Extra |
++----------------------+--------------+------+-----+---------+-------+
+| stu_id               | int(5)       | YES  |     | NULL    |       |
+| stu_name             | char(20)     | YES  |     | NULL    |       |
+| course_name          | char(20)     | YES  |     | NULL    |       |
+| submitted_assignment | varchar(200) | YES  |     | NULL    |       |
++----------------------+--------------+------+-----+---------+-------+
+4 rows in set (0.14 sec)
+
+mysql> desc suggestion;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| stu_id      | int(5)       | NO   | PRI | NULL    |       |
+| course_name | varchar(20)  | YES  |     | NULL    |       |
+| suggestion  | varchar(200) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.08 sec)

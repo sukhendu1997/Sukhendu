@@ -1,0 +1,87 @@
+@charset "utf-8";
+body{
+	background-color:#EEE;
+}
+.top{
+	padding-left:13%;
+	padding-right:13%;
+}
+.logo{
+	width:90px;
+	height:90px;
+}
+#grad4 {
+  height: 5px;
+  width:100%;
+  background-color: red;
+  background-image: linear-gradient(90deg,orange,  #1ec5d8 70%);
+}
+.banner{
+	height:100%;;
+	width:100%;
+}
+.member{
+	width:74%;
+	margin-left:13%;
+	margin-right:13%;
+}
+.a1{
+	border-top:4px solid #0CC;
+	text-align:left;
+	width:30%; 
+	padding:15px 20px 10px 20px;
+	font-size:20px;
+	background-image: repeating-linear-gradient(135deg,white 9%,#efefef 10%);
+}
+.b1{
+	background-color:#FFF;
+	width:3%;
+}
+	
+.A1{
+	border-bottom:4px solid #400080;
+	text-align:left;
+	width:30%;
+	padding:0px 20px 20px 20px;
+	background-image: repeating-linear-gradient(135deg,white 9%,#efefef 10%);
+}
+.B1{
+	background-color:#FFF;
+}
+li{
+	margin-left:15px;
+
+}
+h7{
+	color:#000;
+}
+.description{
+	margin-left:13%;
+	margin-right:13%;
+	text-align:justify;
+	text-justify:inter-word;
+	
+}
+.D1{
+	padding-left:10px;
+	background-color:#C1D3E8;
+	font-size:20px;
+	width:65%;
+}
+.d1{
+	padding:0px 10px 0px 10px;
+	margin-top:0px;
+	background-color:#C1D3E8;
+	box-shadow:#CCC;
+	
+}
+.D3{
+	padding-left:10px;
+	background-color:#C1D3E8;
+	font-size:20px;
+	width:30%;
+}
+.D2{
+	background-color:#FFF;
+	width:3%;
+}
